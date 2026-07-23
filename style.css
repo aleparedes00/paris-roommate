@@ -20,3 +20,161 @@ body {
   --dark: #252820;
   --max-width: 1100px;
 }
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero {
+  min-height: 70vh;
+  padding: 80px 24px;
+  background: var(--dark);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.hero h1 {
+  max-width: 850px;
+  margin: 0 0 24px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+}
+
+.hero > p {
+  max-width: 620px;
+  margin: 0 0 32px;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.navigation a {
+  padding: 10px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  color: white;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  background: white;
+  color: var(--dark);
+}
+
+.section {
+  width: min(calc(100% - 40px), var(--max-width));
+  margin: 0 auto;
+  padding: 96px 0;
+}
+
+h2,
+h3 {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+h2 {
+  margin: 0 0 32px;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+h3 {
+  margin: 40px 0 20px;
+  font-size: 1.5rem;
+}
+
+p {
+  max-width: 720px;
+  margin: 0 0 22px;
+}
+
+ul {
+  max-width: 720px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  position: relative;
+  padding: 14px 0 14px 32px;
+  border-bottom: 1px solid var(--line);
+}
+
+li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  margin: 40px 0 0;
+  background: var(--line);
+}
+
+dl div {
+  padding: 28px;
+  background: var(--surface);
+}
+
+dt {
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+dd {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+}
+
+#contact {
+  width: 100%;
+  max-width: none;
+  padding: 110px 24px;
+  background: var(--surface);
+  text-align: center;
+}
+
+#contact h2,
+#contact p {
+  margin-left: auto;
+  margin-right: auto;
+}
