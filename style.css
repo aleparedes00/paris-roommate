@@ -51,7 +51,7 @@ img {
   justify-content: flex-end;
   background-image: url("photos/living-room.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center 30%;
 }
 
 .hero h1 {
