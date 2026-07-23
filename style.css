@@ -42,9 +42,13 @@ img {
 }
 
 .hero {
-  background-image: url("photos/living-room.jpg");
-  background-size: cover;
-  background-position: center 30%;
+  min-height: 70vh;
+  padding: 80px 24px;
+  background: var(--dark);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .hero h1 {
