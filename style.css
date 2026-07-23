@@ -49,6 +49,9 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  background-image: url("photos/living-room.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .hero h1 {
