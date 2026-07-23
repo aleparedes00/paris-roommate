@@ -44,7 +44,6 @@ img {
 .hero {
   min-height: 70vh;
   padding: 80px 24px;
-  background: var(--dark);
   color: white;
   display: flex;
   flex-direction: column;
