@@ -42,12 +42,6 @@ img {
 }
 
 .hero {
-  min-height: 70vh;
-  padding: 80px 24px;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   background-image: url("photos/living-room.jpg");
   background-size: cover;
   background-position: center 30%;
